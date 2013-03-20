@@ -3,7 +3,7 @@
 
 /* gcc -Wunused -g -lpthread -lz qpipe.c -o qpipe */
 /* gcc -Wunused -g -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -lsocket  -lnsl -lpthread -lz -lrt qpipe.c -o qpipe */
-/* 星际快车1.0 */
+
 
 #undef   _FILE_OFFSET_BITS
 #define  _FILE_OFFSET_BITS  64
