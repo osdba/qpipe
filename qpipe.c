@@ -1651,7 +1651,7 @@ int CheckIpPermission(struct sockaddr_in * pIp, PROG_ARGS * qpipe_args)
         netmask = GetMaskByLen(qpipe_args->masklen[i]);
         netmask = htonl(netmask);
 
-        if (((pIp->sin_addr.s_addr)&netmask) == ((qpipe_args->netip[i]) &netmask))
+        if ( ((pIp->sin_addr.s_addr)&netmask) == ((qpipe_args->netip[i]) &netmask) )
         {
             return 1;
         }
